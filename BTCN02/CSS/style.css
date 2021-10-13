@@ -1,0 +1,19 @@
+.calculate h1{
+    margin-left: 23%;
+    margin-bottom: 2%;
+    font-weight: 700;
+}
+.calculate .left{
+    margin-left: 23%;
+}
+.calculate .central-left{
+    padding-left: 30%;
+    position: absolute;
+}
+
+.calculate .central-right{
+    margin-left: auto;
+}
+p{
+    color: red
+}
