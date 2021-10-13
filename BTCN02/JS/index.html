@@ -17,24 +17,24 @@
 </head>
 
 <body>
-    <section class="calculate">
+    <!-- <section class="calculate">
         <div class="container">
             <h1>Bé tập tính</h1>
             <div class="row">
-
+                <div class="col-3"></div>
                 <div class="col-2 left">
                     <h5>Số thứ nhất</h5>
                     <h5>Số thứ hai</h5>
                     <h5>Kết quả</h5>
-                    <h5>Thông báo: <p id="notification"></p></h5>
+                    <h5>Thông báo: <span id="notification"></span></h5>
                 </div>
                 <div class="col-4 central-left">
-                    <form>
+                    <form id='form-cacu' onsubmit="return(validate());">
                         <label for="number1">
-                            <input onclick="notify()" type="text" id="number1" name="number1">
+                            <input  type="text" id="number1" name="bo">
                         </label><br>
                         <label for="number2">
-                            <input onclick="notify()" type="text" id="number2" name="number2">
+                            <input  type="text" id="number2" name="bo">
                         </label><br>
                         <label for="result">
                             <input type="text" id="result" name="result">
@@ -43,19 +43,20 @@
                 </div>
                 <div class="col-6 central-right">
                     <form action="">
-                        <input type="radio"  id="Cong" name="Cong" value="Cộng" checked>
+
+                        <input type="radio"  id="Cong" name="son" value="1" >
                         <label for="Cong">
                             <h5>Cộng</h5>
                         </label>
-                        <input type="radio"  id="Tru" name="Tru" value="Trừ">
+                        <input type="radio"  id="Tru" name="son" value="2">
                         <label for="Tru">
                             <h5>Trừ</h5>
                         </label><br>
-                        <input type="radio"  id="Nhan" name="Nhan" value="Nhân">
+                        <input type="radio"  id="Nhan" name="son" value="3">
                         <label for="Nhan">
                             <h5>Nhân</h5>
                         </label>
-                        <input type="radio"  id="Chia" name="Chia" value="Chia">
+                        <input type="radio"  id="Chia" name="son" value="4">
                         <label for="Chia">
                             <h5>Chia</h5>
                         </label><br>
@@ -68,7 +69,85 @@
             </div>
         </div>
 
-    </section>
+    </section> -->
+    <div style="margin-top: 5%;" class="container justify-content-center">
+        <h1>BÉ TẬP TÍNH</h1>
+        <div class="card">
+            <div class="card-body justify-content-center">
+                <div class="row">
+                    <div class="col-6">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <label for="number1">Số thứ Nhất </label>
+                                    </div>
+                                    <div class="col-5">
+                                        <input class="form-control" type="text" id="number1" name="bo">
+                                    </div>
+                                </div>
+                                <div class="row mt-3">
+                                    <div class="col-3">
+                                        <label for="number1">Số thứ Hai </label>
+                                    </div>
+                                    <div class="col-5">
+                                        <input class="form-control" type="text" id="number2" name="bo">
+                                    </div>
+                                </div>
+                                <div class="row mt-3">
+                                    <div class="col-3">
+                                        <label  for="number1">Kết Quả</label>
+                                    </div>
+                                    <div class="col-5">
+                                        <input style="color:red" class="form-control" type="text" id="result" name="result">
+                                    </div>
+                                </div>
+                                <div class="row mt-3">
+                                    <div class="col-3">
+                                        <h5>Thông báo:</h5>
+                                    </div>
+                                    <div class="col-5">
+                                        <span style="color:red" id="notification"></span>
+                                    </div>
+                                </div>
+                                  
+                            </div>
+                            <!-- <div class="col-12">
+                                <label class="mr-5"  for="number1">Số thứ Hai
+                                    <input type="text"  placeholder="Last name">
+                                </label>
+                               
+                            </div> -->
+                            
+                        </div>
+                       
+                       
+                    </div>
+                    <div class="col-6">
+                        <input type="radio"  id="Cong" name="son" value="1" >
+                        <label style="margin-left: 10px;" class="ml-3" for="Cong">
+                            Cộng
+                        </label>
+                        <input style="margin-left: 10px;" type="radio"  id="Tru" name="son" value="2">
+                        <label  for="Tru">
+                            Trừ
+                        </label><br>
+                        <input type="radio"  id="Nhan" name="son" value="3">
+                        <label for="Nhan">
+                           Nhân
+                        </label>
+                        <input style="margin-left: 20px;" type="radio"  id="Chia" name="son" value="4">
+                        <label  for="Chia">
+                            Chia
+                        </label><br>
+                    </form>
+                    <button style=" width: 125px;margin-top:20px" type="button"  onclick="Tinh()" class="btn  btn-info">Tính</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
@@ -80,4 +159,8 @@
         crossorigin="anonymous"></script>
 </body>
 
+<script language="javascript">
+    // Lấy đối tượng
+   
+</script>
 </html>
